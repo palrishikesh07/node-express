@@ -13,6 +13,10 @@ app.get("/test", (req, res) => {
   return res.send("Hello from test route");
 });
 
+app.get("/page", (req, res) => {
+  return res.send("Hello from page route");
+});
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
